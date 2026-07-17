@@ -41,7 +41,7 @@ seed = 42              # seed for rng
 # the mu value is used directly and the density column is ignored.
 tune_mu = True
 
-submit_jobs = True # set to True for automated job submission
+submit_jobs = False # set to True for automated job submission
 
 # (mu, target_density) pairs. With tune_mu=False only mu is used, and muT=mu; with
 # tune_mu=True the trial muT is tuned to the paired target density.

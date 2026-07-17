@@ -1,3 +1,4 @@
+import os
 import numpy as np
 import matplotlib.pyplot as plt
 from matplotlib.ticker import MultipleLocator
@@ -28,12 +29,16 @@ datasets = [
     dict(file="props_vs_mu_Beta2_DQMC", method="DQMC",     beta=2.0),
     dict(file="props_vs_mu_Beta5_DQMC", method="DQMC",     beta=5.0),
 ]
+loaded = []
 for ds in datasets:
-    if ds["method"] == "FT-AFQMC":
-        shift = True
-    else:
-        shift = False
-    ds.update(load(ds["file"],shift))
+    if not os.path.exists(ds["file"]):
+        print(f"warning: {ds['file']} not found, skipping "
+              f"{ds['method']} beta={ds['beta']:g}")
+        continue
+    shift = ds["method"] == "FT-AFQMC"
+    ds.update(load(ds["file"], shift))
+    loaded.append(ds)
+datasets = loaded
 
 # Style: color encodes beta, marker/fill encodes method (matches the paper).
 beta_color = {2.0: "C3", 5.0: "C0"}
