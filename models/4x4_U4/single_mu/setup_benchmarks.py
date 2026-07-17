@@ -1,4 +1,6 @@
 import numpy as np
+import json
+import re
 import h5py as h5
 from utils import to_complex, computeG, tune_mu_trial
 from scipy.linalg import eigh
@@ -316,6 +318,7 @@ def build_json(wfn_file: str,
                ham_file: str,
                dt: float,
                nt: int,
+               wtype: str,
                sweeps: int = 30,
                wlks_per_mpi: int = 30,
                nPop: int = 10,
@@ -331,6 +334,7 @@ def build_json(wfn_file: str,
     dt, nt : float, int
         Imaginary-time step and number of slices, written as `timestep` and
         `steps`. Keep these consistent with the wavefunction/Hamiltonian.
+    wtype : {'collinear', 'noncollinear'}
     sweeps : int, optional
         Number of measurement sweeps.
     wlks_per_mpi : int, optional
