@@ -2,6 +2,14 @@
 
 This repository contains examples demonstrating how to run simple finite-T calculations
 with the SAFIRE code. A good starting point is `models/4x4_U4/single_mu`, which explains the workflow from setup to analysis for a calculation on the 4x4 Hubbard model.
+
+The 12x12 model directory already contains example results, as well as benchmarks from the existing FT-AFQMC code. Calculations for more complicated models can be set up
+in the same manner as the model calculations demonstrated here. The trial wavefunction could simply be constructed with the one-body term
+of the Hamiltonian.
+
+The quantum chemistry example comes from the trivial benchmark on the Be atom in https://pubs.acs.org/doi/pdf/10.1021/acs.jctc.8b00569. There are additional ED
+results in the supplementary material of that paper for future benchmarks that can be set up using the same machinery demonstrated here.
+
 #
 # TO-DO
 
