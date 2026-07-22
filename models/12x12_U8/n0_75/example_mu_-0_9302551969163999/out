@@ -1,0 +1,983 @@
+--------------------------------------------------------------------------
+Ignoring value for oob_tcp_if_exclude on worker6100 (10.250.112.0/20: Did not find interface matching this subnet).
+(You can safely ignore this message.)
+--------------------------------------------------------------------------
+Version:     1.0.0
+Git branch:  enable_ab_initio_hams
+Git commit:  62bdd9c-dirty (2026-07-07)
+Build type:  Debug
+Features:   
+ AFQMCFactory Project settings: 
+    -- id             : ftafqmc 
+    -- series         : 0 
+    -- n_groups       : 1 
+    -- MPI tasks/node : 64 
+    -- MPI nodes      : 1 
+    -- MPI tasks      : 64 
+    -- Compute Device    : cpu 
+    -- TBLIS_NUM_THREADS : (unset) 
+    -- OMP_NUM_THREADS   : 1 (user-provided)
+
+
+
+DrvFac::executeFTAFQMCDriver input:
+wavefunction: 
+  filename: wfn_collinear_ft_N144_Beta2_0_nt400_muT0_7080485232936.h5
+walker_set: 
+  walker_type: collinear
+hamiltonian: 
+  filename: hamil_12x12_U8_0_mu-0_9302551969163999_collinear.h5
+hdf_read_file: 
+set_nwalker_to_target: false
+n_walkers_per_mpi_task: 50
+timestep: 0.0050000000000000001
+seed: 42
+initial_Eshift: 0
+
+
+Reading info from wfn file: wfn_collinear_ft_N144_Beta2_0_nt400_muT0_7080485232936.h5 of type any 
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+
+****************************************************
+****************************************************
+****************************************************
+          Beginning Driver initialization.
+****************************************************
+****************************************************
+****************************************************
+
+
+****************************************************
+           Initializing Walker Set 
+****************************************************
+
+WalkerSetBase input:
+name: walker_set_unique_id_3
+walker_type: collinear
+load_balance_type: async
+pop_control_type: pair
+min_weight: 0.050000000000000003
+max_weight: 4
+finite_temperature: true
+
+
+Walker resides in CPU memory
+Using collinear (UHF/ROHF) walker.
+Using async (nonblocking swap) load balancing algorithm.
+Using pair (paired walker branching) population control algorithm.
+
+
+****************************************************
+               Initializing Hamiltonian 
+
+****************************************************
+
+ Hamiltonian Factory input: 
+filename: hamil_12x12_U8_0_mu-0_9302551969163999_collinear.h5
+system: sysid_2
+name: hamiltonian_unique_id_5
+
+ Initializing Hamiltonian from file: hamil_12x12_U8_0_mu-0_9302551969163999_collinear.h5
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+ Found hamiltonian with format: std
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+
+ - Nuclear coulomb energy: (0,0)
+ - Frozen Core energy: (0,0)
+ - Electron self-interaction energy: (0,0)
+
+ModelHamiltonian input:
+name: hamiltonian_unique_id_5
+filename: hamil_12x12_U8_0_mu-0_9302551969163999_collinear.h5
+shift_1body: false
+
+
+****************************************************
+               Initializing Wavefunction 
+
+****************************************************
+Reading info from wfn file: wfn_collinear_ft_N144_Beta2_0_nt400_muT0_7080485232936.h5 of type any 
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+ Wavefunction type: NOMSD
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+ - Number of determinants in trial wavefunction: 1 
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+WARNING: HDF5 type mismatch while reading into an array_view: int != long
+Hamiltonian component 1 is using Hubbard-Stratonovich transformation type discrete_spin or Hubbard U
+
+NOMSD input:
+rediag: false
+dense_trial: true
+
+
+
+****************************************************
+               Initializing Propagator 
+
+****************************************************
+ vHS dimensions: nspins = 2, npol = 1
+
+BasePropagator input:
+
+taylor_n: 6
+i: -1
+a: -1
+vbias_bound: 50
+external_field_scale: 1
+upper_cutoff_scale: 10
+lower_cutoff_scale: 1
+apply_constrain: true
+use_cp_constraint: false
+use_real_vbias: false
+importance_sampling: true
+substractMF: true
+hybrid: true
+printP1eigval: false
+free_projection: false
+denseP1: false
+denseP2: true
+external_field: 
+excited: 
+natural_shift: true
+symmetric_split: false
+debug_verbosity: false
+
+
+
+
+ --------------- Constructing Propagator ------------------ 
+
+ vbias_bound: 50
+ Using sparse 1-body propagator
+ Using dense 2-body propagator (vHS)
+ Using a spin-dependent vHS.
+ Using hybrid method to calculate the weights during the propagation.
+ Using natural shifts with discrete propagators. 
+Increasing host buffer size:    7.8 KiB ->   35.6 MiB
+ Runtime optimization of Model Hamiltonian Operations
+   - G Full: 0.246296464
+   - G sparse 0.138626394
+ Using sparse algorithm to evaluate GIJ in Model Hamiltonian Operations.
+ Local Energy of starting determinant 
+  - Total energy    : (-144.823943,0.000000)
+  - One-body energy : (-306.823943,0.000000)
+  - Coulomb energy  : (162.000000,0.000000)
+  - Exchange energy : (0.000000,0.000000)
+
+****************************************************
+               Initializing Estimators 
+
+****************************************************
+
+ EstimatorHandler input:
+walker_set: 
+  walker_type: collinear
+wavefunction: 
+  filename: wfn_collinear_ft_N144_Beta2_0_nt400_muT0_7080485232936.h5
+hamiltonian: 
+  filename: hamil_12x12_U8_0_mu-0_9302551969163999_collinear.h5
+timestep: 0.005
+steps: 400
+sweeps: 30
+n_walkers_per_mpi_task: 50
+population_control_interval: 5
+walker_ortho_interval: 10
+seed: 42
+estimator: 
+  name: energy
+  print_components: true
+estimator: 
+  name: mixed
+  onerdm: 
+    name: onerdm
+
+
+BasicEstimator input:
+timers: false
+nhist: 0
+measure_interval_multiplier: 1
+_population_control_interval: 5
+
+
+  BasicEstimator: Number of products in weight history: 0
+EnergyEstimator input:
+print_components: false
+print_sign: false
+equil: 0
+skip: 0
+measure_interval_multiplier: 1
+_population_control_interval: 5
+
+
+EnergyEstimator input:
+print_components: true
+print_sign: false
+equil: 0
+skip: 0
+measure_interval_multiplier: 1
+_population_control_interval: 5
+
+
+  --  Adding Full 1RDM (OneRDM) estimator. -- 
+
+****************************************************
+****************************************************
+****************************************************
+          Finished Driver initialization.
+****************************************************
+****************************************************
+****************************************************
+
+
+FTAFQMCDriver input:
+hdf_write_file: 
+steps: 400
+sweeps: 30
+population_control_interval: 5
+measure_interval_multiplier: 1
+walker_ortho_interval: 10
+checkpoint_interval: -1
+sample_interval: -1
+weight_reset: 0
+timestep: 0.0050000000000000001
+dshift: 1
+print_sweep_step: false
+walker_debug: false
+walker_debug_max: 8
+
+
+****************************************************
+              Beginning FT-AFQMC calculation        
+****************************************************
+Initial weight and number of walkers: 3200, 3200
+Initial Eshift: 0 
+Executing 30 sweeps, with Beta = 2 
+
+  - Generating a new 1-body propagator with timestep: 0.005
+ Discrete Propagator parameter: dt=0.005, U=8, nMF=0, alpha=(0.20066732856596886,0), n=(0,0)
+ Largest component of Mean-field subtraction potential: 0
+Increasing host buffer size:   35.6 MiB ->  600.9 MiB
+Increasing host buffer size:  600.9 MiB ->  651.0 MiB
+***************************************************************************
+                    Timer Name:     Elapsed (s)    Averaged (s)  # calls
+***************************************************************************
+                         Block:       71346.016       2378.2005       30
+                  PseudoEnergy:       9614.5355      0.80121129    12000
+                        Energy:        87.69167       1.4615278       60
+                           vHS:       5903.8973      0.49199144    12000
+                             X:       59.246824    0.0049372353    12000
+                         vbias:       452.23498     0.037686248    12000
+                   G_for_vbias:       15065.258       1.2554382    12000
+                     Propagate:       37311.982       3.1093318    12000
+                MixedEstimator:       38.047433       1.2682478       30
+                 BackPropagate:               0               0        0
+          Energy_comm_overhead:               0               0        0
+             vHS_comm_overhead:               0               0        0
+            population_control:       229.58409     0.094479047     2430
+      walker_orthogonalization:       2694.3675       2.3028782     1170
+                         setup:      0.30260543   2.5217119e-05    12000
+                         extra:       1.3535645   0.00011279704    12000
+    WalkerSetBase::loadBalance:       41.340342     0.017012486     2430
+      WalkerSetBase::branching:        19.26935    0.0079297737     2430
+***************************************************************************
+****************************************************
+               Finished AFQMC calculation           
+****************************************************

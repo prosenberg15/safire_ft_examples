@@ -1,0 +1,36 @@
+{
+  "ftafqmc": {
+    "project": {
+      "id": "ftafqmc",
+      "series": 0
+    },
+    "execute": {
+      "walker_set": {
+        "walker_type": "collinear"
+      },
+      "wavefunction": {
+        "filename": "wfn_collinear_ft_N144_Beta2_0_nt400_muT0_7080485232936.h5"
+      },
+      "hamiltonian": {
+        "filename": "hamil_12x12_U8_0_mu-0_9302551969163999_collinear.h5"
+      },
+      "timestep": 0.005,
+      "steps": 400,
+      "sweeps": 30,
+      "n_walkers_per_mpi_task": 50,
+      "population_control_interval": 5,
+      "walker_ortho_interval": 10,
+      "seed": 42,
+      "estimator": {
+        "name": "energy",
+        "print_components": "true"
+      },
+      "estimator": {
+        "name": "mixed",
+        "onerdm": {
+          "name": "onerdm"
+        }
+      }
+    }
+  }
+}
